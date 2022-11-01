@@ -1,11 +1,11 @@
-const Author = (props) => {
-    return (
-        <div>
-            <h1>Author of the portfolio Argjend github change</h1>
-            <p>shoud be changed</p>
-        </div>
-    )
-     
+import React from 'react'
+
+function Author(props) {
+  return (
+    <div>
+      {props.name}
+    </div>
+  )
 }
 
-export default Author ;
+export default Author
