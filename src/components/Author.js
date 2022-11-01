@@ -1,19 +1,18 @@
-import React from 'react'
+import React from "react";
 
-function Author(props) {
+function Author({ author, onSave }) {
   return (
-    <div>
-      <h1>{props.name}</h1>
-      <h2>{props.email} </h2>
-      <h2>{props.phone} </h2>
-      <script src="www.google.com"></script>
-      <img src="src\logo.svg" alt="portret"
-      
-      />
-      
-
+    <div className="author">
+      <h1>{author.name}</h1>
+      <h2>{author.email} </h2>
+      <h2>{author.phone} </h2>
+      <a href={author.webpage} target="_blank" rel="noreferrer">
+        {author.webpage}
+      </a>
+      <img src="src\logo.svg" alt="portret" />
+      <button onClick={onSave}>Save</button>
     </div>
-  )
+  );
 }
 
-export default Author
+export default Author;
